@@ -22,5 +22,5 @@ function driversByName(collection) {
 }
 
 function totalRevenue(collection) {
-  collection.reduce(function(agg, el, i, array){return agg+el.price},0)
+  return collection.reduce(function(agg, el, i, array){return agg+el.price},0)
 }
