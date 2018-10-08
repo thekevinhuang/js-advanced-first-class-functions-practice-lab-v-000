@@ -17,5 +17,6 @@ function driversByRevenue(collection) {
 }
 
 function driversByName(collection) {
-  
+  let newArray = [...collection]
+  return newArray.sort(function(a,b){return a.localeCompare(b)})
 }
